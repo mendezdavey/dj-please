@@ -2,11 +2,39 @@
 *******  File name: style.css
 *******  Author: David Mendez
 *******  Date: 10-5-2016 *******/
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+.centered{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:30%;
+    top:60%;
+    margin-left:-40px;
+    margin-top:-150px;
+    
+    color: white;
+}
 body{
   font-family: 'Orbitron', sans-serif;
   font-family: 'Righteous', cursive;
   font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
+  
   height: 100%;
 }
 /*******Navbar*******/
@@ -21,6 +49,19 @@ body{
   color: #0000EE;
   background-color: #E7E7E7;
   font-weight: bold;
+}
+/*******Header*******/
+header {
+  background-image: url('../img/background-image/dj-please-lg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
 }
 /*******Carousel*******/
 html,
@@ -38,7 +79,6 @@ body{
   color: white;  
 }
 .carousel-caption{
-  margin-bottom: 400px;
 }
 /*******Full width Pictures*******/
 .full-width{
@@ -121,9 +161,10 @@ body{
     background-size: cover;
     -o-background-size: cover;
   }
-  .carousel-caption h1{
+  .carousel-caption{
      padding-bottom: 375px;
      font-size: 2em;
+     margin-bottom: 400px;
   }
 }
 /********Medium devices (desktops, 992px and up)*******/
@@ -138,8 +179,31 @@ body{
     background-size: cover;
     -o-background-size: cover;
   }
-  .carousel-caption h1{
-    
+  .carousel-caption{
+    margin-bottom: 400px;
+  }
+  /*******Full width Pictures for Medium Devices*******/
+  .full-width{
+    height: 700px; 
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+  .full-width-small{
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+  .full-width .background-bg{
+    background-image:url('../img/background-img/party-dark1.jpg');  
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-color: rgba(0,0,0,0.1);
+
   }
 }
 /*******Large devices (large desktops, 1200px and up)*******/
@@ -154,8 +218,9 @@ body{
     background-size: cover;
     -o-background-size: cover;
   }
-  .carousel-caption h1{
+  .carousel-caption {
     font-size: 3em;
+    margin-bottom: 450px;
   }
   /*******Full width Pictures*******/
   .full-width{
